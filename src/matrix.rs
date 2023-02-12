@@ -301,9 +301,9 @@ mod tests {
     fn test_multiply_incompatible_matrix() {
         // Short explanation on the test below
         // Given the matrix
-        // | 1 2 3 | * | 4 | = |  32 |
-        // | 3 2 1 |   | 5 |   |  28 |
-        // | 6 7 8 |   | 6 |   | 107 |
+        // | 1 2 3 | * | 4 | = Error
+        // | 3 2 1 |   | 5 |
+        // | 6 7 8 |
 
         let mut lhs = Matrix::new(3, 3);
         for i in &[1, 2, 3, 3, 2, 1, 6, 7, 8] {
